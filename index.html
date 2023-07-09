@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//w3c//DTD XHTML 1.0 Transitional//En" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+  lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+  xmlns:v="urn:schemas-microsoft-com:vml"
+>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- compatibel meta tag for IE and Edge -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Ever Eden</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      table,
+      td {
+        border-collapse: collapse; /*Borders are collapsed into a single border when possible */
+        border-spacing: 0;
+      }
+      td {
+        padding: 0;
+      }
+      img {
+        border: 0;
+        outline: none;
+      }
+      p {
+        display: block;
+        margin: 13px 0;
+      }
+      .wrapper {
+        width: 100%;
+        table-layout: fixed; /* set up the table inside of the center tag to make sure that the table tag itself isn't any wider than center tag that it's inside of */
+        background-color: #ccc;
+        padding-bottom: 60px;
+      }
+      .main {
+        background-color: #fff;
+        margin: 0 auto;
+        width: 100%;
+        /* recommended email template width to make sure that it displays properly across email clients */
+        max-width: 600px;
+        /* make sure there is no spacing off to the sides of the main table  */
+        border-spacing: 0;
+        font-family: sans-serif;
+        color: #171a1b;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <center> was used in HTML4 to center-align text and is still using in HTML Email - centered email template inside of email clients -->
+    <center class="wrapper">
+      <table class="main" width="100%">
+        <!-- top border -->
+        <tr>
+          <td height="8" style="background-color: #fff"></td>
+        </tr>
+
+        <!-- above logo section -->
+        <tr>
+          <td>
+            <p
+              style="
+                background-color: #fafdc4;
+                text-align: center;
+                padding: 10px 0;
+                font-size: 18px;
+              "
+            >
+              <i class="fa fa-gift" aria-hidden="true" style="color: red"></i>
+              Limited time: FREE kids hair brush on orders $49+
+            </p>
+          </td>
+        </tr>
+        <!-- Logo section -->
+        <tr>
+          <td width="100%" style="text-align: center; padding-bottom: 30px">
+            <a href="#" width="100%"
+              ><img
+                src="https://d3k81ch9hvuctc.cloudfront.net/company/NqV8Eq/images/e5fae3fe-160c-474e-aa49-ec35f9604189.png"
+                alt="Ever Eden Logo"
+                width="25%"
+            /></a>
+          </td>
+        </tr>
+        <!-- banner image -->
+        <tr>
+          <td width="100%" style="background-color: #faf5f2; padding: 30px">
+            <a href="#">
+              <!-- we need max-width=100% so it's never wider than the width of the window and also true for email clients on desktop, web and mobile -->
+              <img
+                src="https://d3k81ch9hvuctc.cloudfront.net/company/NqV8Eq/images/3c328069-b7e3-4de1-a02f-9e955705a427.png"
+                alt=""
+                width="600"
+                style="max-width: 100%; background-color: red"
+            /></a>
+          </td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>
