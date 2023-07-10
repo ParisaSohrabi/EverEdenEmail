@@ -57,12 +57,34 @@
         font-family: sans-serif;
         color: #171a1b;
       }
+      .main-bgColor {
+        background-color: #faf5f2;
+      }
+      .two-columns {
+        /* padding: 15px 0; */
+        text-align: center;
+      }
+      /* max-width=300px because we want 2 colums out of 600px */
+      .two-columns .column {
+        width: 100%;
+        max-width: 300px;
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        padding: 20px 0;
+
+      }
+      .two-columns .content {
+        padding: 20px;
+        text-align: center;
+      }
+     
     </style>
   </head>
   <body>
     <!-- <center> was used in HTML4 to center-align text and is still using in HTML Email - centered email template inside of email clients -->
     <center class="wrapper">
-      <table class="main" width="100%">
+      <table class="main" width="100%" >
         <!-- top border -->
         <tr>
           <td height="8" style="background-color: #fff"></td>
@@ -86,8 +108,15 @@
         </tr>
         <!-- Logo section -->
         <tr>
-          <td width="100%" style="text-align: center; padding-bottom: 30px">
-            <a href="#" width="100%"
+          <td
+            width="100%"
+            style="
+              text-align: center;
+              padding-bottom: 30px;
+              vertical-align: top;
+            "
+          >
+            <a href="#" width="600" style="max-width: 100%"
               ><img
                 src="https://d3k81ch9hvuctc.cloudfront.net/company/NqV8Eq/images/e5fae3fe-160c-474e-aa49-ec35f9604189.png"
                 alt="Ever Eden Logo"
@@ -97,15 +126,331 @@
         </tr>
         <!-- banner image -->
         <tr>
-          <td width="100%" style="background-color: #faf5f2; padding: 30px">
+          <td
+            width="100%"
+            class="main-bgColor"
+            style="padding: 30px; vertical-align: top"
+          >
             <a href="#">
               <!-- we need max-width=100% so it's never wider than the width of the window and also true for email clients on desktop, web and mobile -->
               <img
                 src="https://d3k81ch9hvuctc.cloudfront.net/company/NqV8Eq/images/3c328069-b7e3-4de1-a02f-9e955705a427.png"
                 alt=""
                 width="600"
-                style="max-width: 100%; background-color: red"
+                style="max-width: 100%"
             /></a>
+          </td>
+        </tr>
+        <tr>
+          <td
+            width="100%"
+            class="main-bgColor"
+            style="padding: 0 70px; vertical-align: top"
+          >
+            <p
+              style="
+                text-align: center;
+                font-size: 18px;
+                letter-spacing: 1px;
+                font-weight: 400;
+                color: #1e4d51;
+                line-height: 25px;
+              "
+            >
+              Save on our range of safe products for the whole family.
+              <span style="font-weight: bold"
+                >Click below to see your unique discount code.</span
+              >
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td width="100%" style="vertical-align: top" class="main-bgColor">
+            <table style="margin: 20px auto">
+              <tr>
+                <td style="text-align: center">
+                  <a
+                    href="#"
+                    style="
+                      text-transform: uppercase;
+                      background-color: #1e4d51;
+                      color: #fff;
+                      font-weight: 700;
+                      text-decoration: none;
+                      font-size: 14px;
+                      line-height: 100%;
+                      letter-spacing: 3px;
+                      margin: 10px 0;
+                      padding: 15px 30px 15px 30px;
+                      border-radius: 5px;
+                    "
+                    >see your code</a
+                  >
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td
+            width="100%"
+            class="main-bgColor"
+            style="padding: 30px 70px; vertical-align: top"
+          >
+            <p
+              style="
+                text-align: center;
+                font-size: 26px;
+                letter-spacing: 1px;
+                font-weight: 400;
+                color: #1e4d51;
+                text-transform: uppercase;
+              "
+            >
+              Five Start Faves
+            </p>
+          </td>
+        </tr>
+
+        <!-- gallery- two columns section -->
+        <tr>
+          <td class="main-bgColor">
+            <table width="100%" class="two-columns">
+              <tr>
+                <td class="column" >
+                  <table class="content" style="margin: 0 auto;">
+                    <tr>
+                      <td>
+                        <a href="#">
+                          <img
+                            src="https://cdn.shopify.com/s/files/1/0009/7137/4652/products/Eczema-Catalogue.jpg?v=1682498797"
+                            alt="Image of Healin Eczema Treatment"
+                            width="260"
+                            style="max-width: 260px"
+                          />
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        style="
+                          color: #1e4d51;
+                          text-align: center;
+                          text-transform: capitalize;
+                          font-size: 18px;
+                          font-weight: 400;
+                          text-align: center;
+                          padding-top: 5px;
+                          line-height: 1.3;
+                        "
+                      >
+                        Healing Eczema Treatment
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        style="padding: 9px 18px 0px 18px; text-align: center"
+                      >
+                        <a
+                          href="#"
+                          style="
+                            text-transform: uppercase;
+                            background-color: #1e4d51;
+                            color: #fff;
+                            font-weight: 400;
+                            text-decoration: none;
+                            font-size: 14px;
+                            line-height: 1.3;
+                            letter-spacing: 3px;
+                            margin: 5px 0;
+                            padding: 10px 15px 10px 15px;
+                            border-radius: 5px;
+                            text-align: center;
+                            display: inline-block;
+                          "
+                          >Shop now</a
+                        >
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td class="column">
+                  <table class="content" style="margin: 0 auto;">
+                    <tr>
+                      <td>
+                        <a href="#">
+                          <img
+                            src="https://cdn.shopify.com/s/files/1/0009/7137/4652/products/Peach.jpg?v=1683758279"
+                            alt="Image of Kids Happy Face Duo"
+                            width="260"
+                            style="max-width: 260px"
+                          />
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        style="
+                          color: #1e4d51;
+                          text-align: center;
+                          text-transform: capitalize;
+                          font-size: 18px;
+                          font-weight: 400;
+                          text-align: center;
+                          padding-top: 5px;
+                          line-height: 1.3;
+                        "
+                      >
+                        Kids Happy face Duo
+                      </td>
+                    </tr>
+                    <tr>
+                      <td
+                        style="padding: 9px 18px 0px 18px; text-align: center"
+                      >
+                        <a
+                          href="#"
+                          style="
+                            text-transform: uppercase;
+                            background-color: #1e4d51;
+                            color: #fff;
+                            font-weight: 400;
+                            text-decoration: none;
+                            font-size: 14px;
+                            line-height: 1.3;
+                            letter-spacing: 3px;
+                            margin: 5px 0;
+                            padding: 10px 15px 10px 15px;
+                            border-radius: 5px;
+                            text-align: center;
+                            display: inline-block;
+                          "
+                          >Shop now</a
+                        >
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            <table width="100%" class="two-columns">
+                <tr>
+                  <td class="column" >
+                    <table class="content" style="margin: 0 auto;">
+                      <tr>
+                        <td>
+                          <a href="#">
+                            <img
+                              src="https://cdn.shopify.com/s/files/1/0009/7137/4652/products/Happy-face-duo-_-SPF.jpg?v=1682498954"
+                              alt="Image of Kids Daily 1-2-3 Routine"
+                              width="260"
+                              style="max-width: 260px"
+                            />
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td
+                          style="
+                            color: #1e4d51;
+                            text-align: center;
+                            text-transform: capitalize;
+                            font-size: 18px;
+                            font-weight: 400;
+                            text-align: center;
+                            padding-top: 5px;
+                            line-height: 1.3;
+                          "
+                        >
+                        Kids Daily 1-2-3 Routine
+                        </td>
+                      </tr>
+                      <tr>
+                        <td
+                          style="padding: 9px 18px 0px 18px; text-align: center"
+                        >
+                          <a
+                            href="#"
+                            style="
+                              text-transform: uppercase;
+                              background-color: #1e4d51;
+                              color: #fff;
+                              font-weight: 400;
+                              text-decoration: none;
+                              font-size: 14px;
+                              line-height: 1.3;
+                              letter-spacing: 3px;
+                              margin: 5px 0;
+                              padding: 10px 15px 10px 15px;
+                              border-radius: 5px;
+                              text-align: center;
+                              display: inline-block;
+                            "
+                            >Shop now</a
+                          >
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td class="column">
+                    <table class="content" style="margin: 0 auto;">
+                      <tr>
+                        <td>
+                          <a href="#">
+                            <img
+                              src="https://cdn.shopify.com/s/files/1/0009/7137/4652/products/baby_face_cream-compressor.jpg?v=1682498401"
+                              alt="Image of Nourishing Baby Face Cream"
+                              width="260"
+                              style="max-width: 260px"
+                            />
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td
+                          style="
+                            color: #1e4d51;
+                            text-align: center;
+                            text-transform: capitalize;
+                            font-size: 18px;
+                            font-weight: 400;
+                            text-align: center;
+                            padding-top: 5px;
+                            line-height: 1.3;
+                          "
+                        >
+                        Nourishing Baby Face Cream
+                        </td>
+                      </tr>
+                      <tr>
+                        <td
+                          style="padding: 9px 18px 0px 18px; text-align: center"
+                        >
+                          <a
+                            href="#"
+                            style="
+                              text-transform: uppercase;
+                              background-color: #1e4d51;
+                              color: #fff;
+                              font-weight: 400;
+                              text-decoration: none;
+                              font-size: 14px;
+                              line-height: 1.3;
+                              letter-spacing: 3px;
+                              margin: 5px 0;
+                              padding: 10px 15px 10px 15px;
+                              border-radius: 5px;
+                              text-align: center;
+                              display: inline-block;
+                            "
+                            >Shop now</a
+                          >
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
           </td>
         </tr>
       </table>
