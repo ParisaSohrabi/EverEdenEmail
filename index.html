@@ -77,8 +77,8 @@
         display: inline-block;
         vertical-align: top;
         text-align: center;
-        /* padding: 20px 0; */
         background-color: olive;
+        box-sizing: border-box;
       }
       .two-columns .content {
         text-align: center;
@@ -101,13 +101,29 @@
         vertical-align: top;
         text-align: center;
         background-color: #1e4d51;
+        box-sizing: border-box;
       }
       .padding {
-        padding: 10px;
+        /* padding: 10px; */
         background-color: yellow;
       }
       /* Responsive Styles */
       @media (max-width: 600px) {
+        .two-columns .column,
+        .three-columns .column {
+          max-width: 100%;
+          display: block;
+          /* margin: 0 auto; */
+          /* text-align: center; */
+          margin-bottom: 20px;
+        }
+        .two-columns .content {
+          /* margin: 0 auto !important; */
+          background-color: chartreuse;
+          /* text-align: center !important; */
+          /* width: 100% !important; */
+          /* max-width: 100% !important; */
+        }
       }
       @media (max-width: 400px) {
       }
@@ -143,12 +159,12 @@
               <table width="100%">
                 <tr>
                   <td style="text-align: center; padding: 30px 0">
-                    <a href="#" s
+                    <a href="#"
                       ><img
                         src="https://d3k81ch9hvuctc.cloudfront.net/company/NqV8Eq/images/e5fae3fe-160c-474e-aa49-ec35f9604189.png"
                         alt="Ever Eden Logo"
                         width="180"
-                        tyle="max-width: 100%;"
+                        style="max-width: 100%"
                     /></a>
                   </td>
                 </tr>
@@ -178,7 +194,6 @@
                   font-weight: 400;
                   color: #1e4d51;
                   line-height: 25px;
-                  max-width: 100%;
                 "
               >
                 Save on our range of safe products for the whole family.
@@ -189,13 +204,14 @@
             </td>
           </tr>
           <tr>
-            <td class="outer-table-bgColor" style="max-width: 100%">
+            <td class="outer-table-bgColor">
               <table style="margin: 20px auto">
                 <tr>
                   <td style="text-align: center">
                     <a
                       href="#"
                       style="
+                        max-width: 100%;
                         text-transform: uppercase;
                         background-color: #1e4d51;
                         color: #fff;
